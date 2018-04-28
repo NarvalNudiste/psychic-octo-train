@@ -1,0 +1,246 @@
+fileFormatVersion: 2
+guid: d7c06e38c2e6d2b4cad6c106fd5a43e2
+timeCreated: 1524928473
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Chapeau
+    100004: Corps
+    100006: Cou
+    100008: Cube
+    100010: Cube_2
+    100012: Cube_3
+    100014: Cube_4
+    100016: Cube_5
+    100018: Cube_6
+    100020: Cube_Goal
+    100022: Cube_Goal_2
+    100024: Cylinder
+    100026: Cylinder_1
+    100028: Cylinder_1_2
+    100030: Cylinder_2
+    100032: Jambe_droite
+    100034: Jambe_gauche
+    100036: Jonction_Corps_cou
+    100038: Jonction_Tete
+    100040: Plane
+    100042: "T\xEAte"
+    100044: "T\xEAte_Goal"
+    100046: Null
+    400000: //RootNode
+    400002: Chapeau
+    400004: Corps
+    400006: Cou
+    400008: Cube
+    400010: Cube_2
+    400012: Cube_3
+    400014: Cube_4
+    400016: Cube_5
+    400018: Cube_6
+    400020: Cube_Goal
+    400022: Cube_Goal_2
+    400024: Cylinder
+    400026: Cylinder_1
+    400028: Cylinder_1_2
+    400030: Cylinder_2
+    400032: Jambe_droite
+    400034: Jambe_gauche
+    400036: Jonction_Corps_cou
+    400038: Jonction_Tete
+    400040: Plane
+    400042: "T\xEAte"
+    400044: "T\xEAte_Goal"
+    400046: Null
+    2300000: Chapeau
+    2300002: Corps
+    2300004: Cou
+    2300006: Cube
+    2300008: Cube_2
+    2300010: Cube_3
+    2300012: Cube_4
+    2300014: Cube_5
+    2300016: Cube_6
+    2300018: Cylinder
+    2300020: Cylinder_1
+    2300022: Cylinder_1_2
+    2300024: Cylinder_2
+    2300026: Jambe_droite
+    2300028: Jambe_gauche
+    2300030: Jonction_Corps_cou
+    2300032: Jonction_Tete
+    2300034: Plane
+    2300036: "T\xEAte"
+    3300000: Chapeau
+    3300002: Corps
+    3300004: Cou
+    3300006: Cube
+    3300008: Cube_2
+    3300010: Cube_3
+    3300012: Cube_4
+    3300014: Cube_5
+    3300016: Cube_6
+    3300018: Cylinder
+    3300020: Cylinder_1
+    3300022: Cylinder_1_2
+    3300024: Cylinder_2
+    3300026: Jambe_droite
+    3300028: Jambe_gauche
+    3300030: Jonction_Corps_cou
+    3300032: Jonction_Tete
+    3300034: Plane
+    3300036: "T\xEAte"
+    4300000: Plane
+    4300002: Corps
+    4300004: Jonction_Corps_cou
+    4300006: Cou
+    4300008: Jonction_Tete
+    4300010: "T\xEAte"
+    4300012: Chapeau
+    4300014: Jambe_gauche
+    4300016: Cube
+    4300018: Cylinder
+    4300020: Cube_2
+    4300022: Cylinder_1
+    4300024: Cube_3
+    4300026: Jambe_droite
+    4300028: Cube_4
+    4300030: Cylinder_2
+    4300032: Cube_5
+    4300034: Cylinder_1_2
+    4300036: Cube_6
+    7400000: IDLE
+    7400002: CANCER_RUNNING
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: IDLE
+      takeName: CINEMA_4D_Main
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: CANCER_RUNNING
+      takeName: CINEMA_4D_Main
+      firstFrame: 61
+      lastFrame: 120
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
