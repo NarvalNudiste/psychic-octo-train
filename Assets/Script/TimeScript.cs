@@ -21,15 +21,15 @@ public class TimeScript : MonoBehaviour {
         else {
             currentPepito = Instantiate<Transform>(player_prefab, this.transform.position, Quaternion.identity);
         }
-       currentPepito.GetComponent<Movement_Temp>().Active = true;
+       currentPepito.GetComponent<Player>().Active = true;
     }
 	void FixedUpdate () {
         pos_ary.Add(currentPepito.position);
         if (Input.GetKeyDown(KeyCode.Q)) {
             //todo reset le tableau
-            currentPepito.GetComponent<Movement_Temp>().Active = false;
+            currentPepito.GetComponent<Player>().Active = false;
             currentPepito = Instantiate<Transform>(player_prefab, pos_ary.L[list_capacity-1], Quaternion.identity);
-            currentPepito.GetComponent<Movement_Temp>().Active = true;
+            currentPepito.GetComponent<Player>().Active = true;
         }
 	}
 }

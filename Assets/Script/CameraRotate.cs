@@ -24,7 +24,7 @@ public class CameraRotate : MonoBehaviour {
         orientation = 0;
 	}
 
-    public Transform player;
+    public GameObject player;
     private bool isRotating = false;
     public int speed = 10;
     private float angleRotated;
@@ -46,10 +46,12 @@ public class CameraRotate : MonoBehaviour {
             if (Math.Abs(angleRotated) < 90)
             {
                 this.transform.RotateAround(new Vector3(0, 0, 0), new Vector3(0, 1, 0), direction * 90 * Time.deltaTime * speed);
+                player.transform.RotateAround(player.transform.position, new Vector3(0, 1, 0), direction * 90 * Time.deltaTime * speed);
             }
             else
             {
                 this.transform.RotateAround(new Vector3(0, 0, 0), new Vector3(0, 1, 0), direction * 90 - previousAngleRotate);
+                player.transform.RotateAround(player.transform.position, new Vector3(0, 1, 0), direction * 90 - previousAngleRotate);
             }
             if (Math.Abs(angleRotated) >= 90) {
                 isRotating = false;
