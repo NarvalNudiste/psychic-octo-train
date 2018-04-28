@@ -3,6 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : MonoBehaviour {
+    private bool active;
+    public bool Active {
+        get {
+            return active;
+        }
+
+        set {
+            active = value;
+        }
+    }
     //Anim booleans
     private bool moving;
     public bool Moving {
@@ -10,7 +20,6 @@ public class Player : MonoBehaviour {
             return moving;
         }
     }
-    
     //vars
     public float speed;
     public float jumpForce;
@@ -20,17 +29,15 @@ public class Player : MonoBehaviour {
     void Start () {
         this.speed = 5.0f;
 	}
-	
-	// Update is called once per frame
-	void Update () {
-        if (!Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D)){
+    void Movement() {
+        if (!Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D)) {
             moving = false;
         }
-            Rigidbody rigb = this.GetComponent<Rigidbody>();
+        Rigidbody rigb = this.GetComponent<Rigidbody>();
         CameraRotate camRot = FindObjectOfType<CameraRotate>();
-        if (Input.GetKey(KeyCode.A)) {
+        if (Input.GetKey(KeyCode.A) && Active) {
             this.moving = true;
-            if(camRot.Orientation == TowerOrientation.FRONT) rigb.MovePosition(transform.position + new  Vector3(-speed, 0.0f, 0.0f) * Time.deltaTime);
+            if (camRot.Orientation == TowerOrientation.FRONT) rigb.MovePosition(transform.position + new Vector3(-speed, 0.0f, 0.0f) * Time.deltaTime);
             else if (camRot.Orientation == TowerOrientation.LEFT) rigb.MovePosition(transform.position + new Vector3(0, 0, speed) * Time.deltaTime);
             else if (camRot.Orientation == TowerOrientation.RIGHT) rigb.MovePosition(transform.position + new Vector3(0, 0, -speed) * Time.deltaTime);
             else if (camRot.Orientation == TowerOrientation.BACK) rigb.MovePosition(transform.position + new Vector3(speed, 0.0f, 0.0f) * Time.deltaTime);
@@ -50,6 +57,12 @@ public class Player : MonoBehaviour {
         }
         if (rigb.velocity == Vector3.zero) {
             isJump = false;
+        }
+    }
+	// Update is called once per frame
+	void Update () {
+        if (Active) {
+            Movement();
         }
     }
 }
