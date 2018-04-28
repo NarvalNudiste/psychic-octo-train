@@ -13,6 +13,7 @@ public class Player : MonoBehaviour {
     
     //vars
     public float speed;
+    public float jumpForce;
     private bool isJump;
 
 
@@ -44,7 +45,7 @@ public class Player : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Space)) {
             if (!isJump) {
                 isJump = true;
-                rigb.AddForce(new Vector3(0, 300, 0));
+                rigb.AddForce(new Vector3(0, jumpForce, 0));
             }
         }
         if (rigb.velocity == Vector3.zero) {
