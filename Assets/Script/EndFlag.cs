@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EndFlag : MonoBehaviour {
 
@@ -8,7 +9,7 @@ public class EndFlag : MonoBehaviour {
     {
         if(other.tag == "Player")
         {
-
+            GameManager.instance.Win();
         }
     }
 }
