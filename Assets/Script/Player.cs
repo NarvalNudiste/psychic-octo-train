@@ -63,6 +63,20 @@ public class Player : MonoBehaviour {
 	void Update () {
         if (Active) {
             Movement();
+            BlockFall();
         }
     }
+
+    private void BlockFall() {
+        Rigidbody rigb = this.GetComponent<Rigidbody>();
+        CameraRotate camRot = FindObjectOfType<CameraRotate>();
+
+        rigb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
+
+        if (camRot.Orientation == TowerOrientation.FRONT) rigb.constraints = rigb.constraints | RigidbodyConstraints.FreezePositionZ;
+        else if (camRot.Orientation == TowerOrientation.LEFT) rigb.constraints = rigb.constraints | RigidbodyConstraints.FreezePositionX;
+        else if (camRot.Orientation == TowerOrientation.RIGHT) rigb.constraints = rigb.constraints | RigidbodyConstraints.FreezePositionX;
+        else if (camRot.Orientation == TowerOrientation.BACK) rigb.constraints = rigb.constraints | RigidbodyConstraints.FreezePositionZ;
+    }
+
 }
