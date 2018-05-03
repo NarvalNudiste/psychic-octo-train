@@ -70,10 +70,10 @@ TextureImporter:
     serializedVersion: 2
     sprites: []
     outline:
-    - - {x: -2, y: -2}
-      - {x: -2, y: 2}
-      - {x: 2, y: 2}
-      - {x: 2, y: -2}
+    - - {x: -256, y: 256}
+      - {x: -256, y: -256}
+      - {x: 256, y: -256}
+      - {x: 256, y: 256}
     physicsShape:
     - - {x: -2, y: -2}
       - {x: -2, y: 2}
