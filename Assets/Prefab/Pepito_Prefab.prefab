@@ -141,7 +141,7 @@ GameObject:
   - component: {fileID: 65065381432784500}
   m_Layer: 0
   m_Name: Pepito_Prefab
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1516,5 +1516,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d3fcef81bb58c5459bbf7eef0f04663, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
-  jumpForce: 0
+  speed: 2
+  jumpForce: 220
