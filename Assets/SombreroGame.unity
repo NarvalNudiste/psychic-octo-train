@@ -3318,6 +3318,16 @@ Prefab:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 54742599216029776, guid: ef5a0dc96600a854abfc70498f8c4868,
+        type: 2}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 65065381432784500, guid: ef5a0dc96600a854abfc70498f8c4868,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 1.89
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ef5a0dc96600a854abfc70498f8c4868, type: 2}
   m_IsPrefabParent: 0
@@ -4933,7 +4943,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 99dbe561fb7f45b49afa3504f2678ecd, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2
+      value: 1.74
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 99dbe561fb7f45b49afa3504f2678ecd, type: 3}
       propertyPath: m_LocalScale.z
