@@ -32,11 +32,11 @@ public class CameraRotate : MonoBehaviour {
     private int direction = 0;
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetKeyDown(KeyCode.LeftArrow) && !isRotating) {
+        if ((Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetAxis("RightH") < -0.2f || Input.GetButtonDown("Fire3")) && !isRotating) {
             direction = 1;
             isRotating = true;
         }
-        if (Input.GetKeyDown(KeyCode.RightArrow) && !isRotating)
+        if ((Input.GetKeyDown(KeyCode.RightArrow) || Input.GetAxis("RightH") > 0.2f || Input.GetButtonDown("Fire2")) && !isRotating)
         {
             direction = -1;
             isRotating = true;
