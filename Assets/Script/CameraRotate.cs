@@ -55,7 +55,8 @@ public class CameraRotate : MonoBehaviour {
             }
             if (Math.Abs(angleRotated) >= 90) {
                 isRotating = false;
-                orientation = (TowerOrientation)((int)(orientation + direction) % 4);
+                int newOrientation = (int)(orientation + direction) % 4;
+                orientation = (TowerOrientation)(newOrientation<0 ? 3: newOrientation);
                 direction = 0;
                 angleRotated = 0;
             }
