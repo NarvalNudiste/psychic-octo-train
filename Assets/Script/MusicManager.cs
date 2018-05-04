@@ -8,11 +8,12 @@ public class MusicManager : MonoBehaviour {
     public AudioClip loop;
     private AudioSource aS;
     void Start() {
-        DontDestroyOnLoad(this.gameObject);
-        aS = this.GetComponent<AudioSource>();
-        aS.loop = false;
-        aS.clip = intro;
-        aS.Play();
+            DontDestroyOnLoad(this.gameObject);
+            aS = this.GetComponent<AudioSource>();
+            aS.loop = false;
+            aS.clip = intro;
+            aS.Play();
+        }
     }
     void Update() {
         if (!aS.isPlaying) {

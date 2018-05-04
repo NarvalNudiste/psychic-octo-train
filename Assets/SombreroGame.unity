@@ -4011,6 +4011,11 @@ Prefab:
       propertyPath: m_Size.y
       value: 1.89
       objectReference: {fileID: 0}
+    - target: {fileID: 114884609675973662, guid: ef5a0dc96600a854abfc70498f8c4868,
+        type: 2}
+      propertyPath: speed
+      value: 1.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ef5a0dc96600a854abfc70498f8c4868, type: 2}
   m_IsPrefabParent: 0
