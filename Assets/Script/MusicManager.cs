@@ -4,16 +4,16 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MusicManager : MonoBehaviour {
-    public AudioClip intro;
-    public AudioClip loop;
+    private AudioClip intro;
+    private AudioClip loop;
     private AudioSource aS;
     void Start() {
-            DontDestroyOnLoad(this.gameObject);
-            aS = this.GetComponent<AudioSource>();
-            aS.loop = false;
-            aS.clip = intro;
-            aS.Play();
-        }
+        intro = Resources.Load("musique_pepito_intro") as AudioClip;
+        loop = Resources.Load("musique_pepito_loop") as AudioClip;
+        aS = this.GetComponent<AudioSource>();
+        aS.loop = false;
+        aS.clip = intro;
+        aS.Play();
     }
     void Update() {
         if (!aS.isPlaying) {
