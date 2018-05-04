@@ -35,14 +35,14 @@ public class Player : MonoBehaviour {
         }
         Rigidbody rigb = this.GetComponent<Rigidbody>();
         CameraRotate camRot = FindObjectOfType<CameraRotate>();
-        if (Input.GetKey(KeyCode.A) && Active || Input.GetAxis("Horizontal") < -0.1f && Active) {
+        if (Input.GetAxis("Horizontal") < -0.1f && Active) {
             this.moving = true;
             if (camRot.Orientation == TowerOrientation.FRONT) rigb.MovePosition(transform.position + new Vector3(-speed, 0.0f, 0.0f) * Time.deltaTime);
             else if (camRot.Orientation == TowerOrientation.LEFT) rigb.MovePosition(transform.position + new Vector3(0, 0, speed) * Time.deltaTime);
             else if (camRot.Orientation == TowerOrientation.RIGHT) rigb.MovePosition(transform.position + new Vector3(0, 0, -speed) * Time.deltaTime);
             else if (camRot.Orientation == TowerOrientation.BACK) rigb.MovePosition(transform.position + new Vector3(speed, 0.0f, 0.0f) * Time.deltaTime);
         }
-        if (Input.GetKey(KeyCode.D) || Input.GetAxis("Horizontal") > 0.1f && Active) {
+        if (Input.GetAxis("Horizontal") > 0.1f && Active) {
             this.moving = true;
             if (camRot.Orientation == TowerOrientation.FRONT) rigb.MovePosition(transform.position + new Vector3(speed, 0.0f, 0.0f) * Time.deltaTime);
             else if (camRot.Orientation == TowerOrientation.LEFT) rigb.MovePosition(transform.position + new Vector3(0, 0, -speed) * Time.deltaTime);
