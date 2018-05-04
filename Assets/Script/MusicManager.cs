@@ -8,8 +8,8 @@ public class MusicManager : MonoBehaviour {
     private AudioClip loop;
     private AudioSource aS;
     void Start() {
-        intro = Resources.Load("musique_pepito_intro") as AudioClip;
-        loop = Resources.Load("musique_pepito_loop") as AudioClip;
+        intro = Resources.Load("musique_pepito_2_intro") as AudioClip;
+        loop = Resources.Load("musique_pepito_2_loop") as AudioClip;
         aS = this.GetComponent<AudioSource>();
         aS.loop = false;
         aS.clip = intro;
